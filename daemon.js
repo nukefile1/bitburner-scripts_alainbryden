@@ -35,7 +35,7 @@ const argsSchema = [
     ['use-hacknet-servers', false], // Same as above, but the game recently renamed these
     ['spend-hashes-for-money-when-under', 10E6], // (Default 10m) Convert 4 hashes to money whenever we're below this amount
     ['disable-spend-hashes', false], // An easy way to set the above to a very large negative number, thus never spending hashes for Money
-    ['silent-misfires', false], // Instruct remote scripts not to alert when they misfire
+    ['silent-misfires', true], // Instruct remote scripts not to alert when they misfire
     ['initial-max-targets', 2], // Initial number of servers to target / prep (TODO: Scale this as BN progression increases)
     ['max-steal-percentage', 0.75], // Don't steal more than this in case something goes wrong with timing or scheduling, it's hard to recover from
     ['cycle-timing-delay', 16000], // Time
